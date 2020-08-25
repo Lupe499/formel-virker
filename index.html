@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="style.css" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="wrapper">
+
+        <form name="myForm" id="form" name="myform">
+            <div id="myform">
+                <fieldset>
+                    <div class="formGrid">
+                        <div class="inputDivs emailDiv">
+                            <label>Email*</label>
+                            <input type="text" id="email" name="email" placeholder="alex.pedersen@gmail.com">
+                            <span class="statusMessage email"></span>
+                        </div>
+                        <div class="inputDivs passwordDiv">
+                            <label>Adgangskode*</label>
+                            <input type="password" id="password"  name="password" placeholder="********">
+                            <span class="statusMessage password"></span>
+                        </div>
+                        <div class="inputDivs usernameDiv">
+                            <label>Brugernavn*</label>
+                            <input type="username" id="username" name="username" placeholder="Lupe.-">
+                            <span class="statusMessage username"></span>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="formGrid">
+                        <div class="inputDivs">
+                            <label>Fornavn*</label>
+                            <input type="text" id="firstname" name="firstname" placeholder="Bobby">
+                            <span class="statusMessage firstname"></span>
+                        </div>
+                        <div class="inputDivs">
+                            <label>Efternavn*</label>
+                            <input type="text" id="lastname" name="lastname" placeholder="Jensen">
+                            <span class="statusMessage lastname"></span>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="formGrid">
+                        <div class="inputDivs">
+                            <label>Adresse*</label>
+                            <input type="text" id="adresse" name="adresse" placeholder="Bakkegårds allé 10">
+                            <span class="statusMessage adresse"></span>
+                        </div>
+                        <div class="inputDivs">
+                            <label>Post nummer*</label>
+                            <input type="text" id="zip" name="zip" placeholder="1804">
+                            <span class="statusMessage zip"></span>
+                        </div>
+                        <div class="inputDivs">
+                            <label>By*</label>
+                            <input type="text" id="city" name="city" placeholder="København">
+                            <span class="statusMessage city"></span>
+                        </div>
+                        <div class="inputDivs">
+                            <label>Land*</label>
+                            <input type="text" id="contry" name="contry" placeholder="Danmark">
+                            <span class="statusMessage contry"></span>
+                        </div>
+                    </div>
+                </fieldset>
+                <button type="submit" class="logIn">Log ind</button>
+            </div>
+        </form>
+</div> <!-- end wrapper -->
+<script src="java.js"></script>
+</body>
+</html>

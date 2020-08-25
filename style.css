@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+p{
+	padding-bottom:1em;
+    line-height:1.3;
+    white-space: pre-line;
+}
+img{
+	width:100%;
+	height:auto;	
+}
+#wrapper{
+    max-width:980px;
+    margin:0 auto;
+}
+h1{
+    text-align:center;
+    margin:1em 0;
+}
+h2{
+    padding-bottom:0.5rem;
+}
+form{
+    display: grid;
+    place-items: center;
+    border: 1px solid #000;
+}
+
+.adresseGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.formGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5%;
+}
+input{
+    border: none;
+    width: 180px;
+    outline-color: #FC4A56;
+    outline-offset: 2px;
+    font-weight: bold;
+}
+input::placeholder{
+    opacity: 1;
+}
+.passwordDiv{
+    grid-area: 2/2/3/3;
+}
+.usernameDiv{
+    grid-area: 2/1/3/2;
+}
+.emailDiv input{
+    width: 378px;
+}
+.emailDiv{
+    grid-area: 1/1/2/3;
+}
+span{
+    display: block;
+    color: #FC4A56;
+    font-family: monospace;
+}
+form{
+    max-width: 700px;
+    background-color: #0C1824;
+    margin: 0 auto;
+    color: #ECE8E1;
+}
+form label{
+    font-family: 'Roboto Mono', monospace;
+    padding: 1.5em 0 0 0;
+    font-weight: bold;
+    display: block;
+}
+fieldset{
+    border: none;
+    margin-top: 2em;
+}
+
+.logIn{
+    display: block;
+    margin-left: 67%;
+    margin-top: 2em;
+    background-color: #FC4A56;
+    padding: 2% 8%;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    color: #ECE8E1;
+    border: none;
+}
