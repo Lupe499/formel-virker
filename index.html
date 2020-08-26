@@ -11,23 +11,23 @@
 <body>
 <div id="wrapper">
 
-        <form name="myForm" id="form" name="myform">
+        <form name="form" id="form" name="form" novalidate>
             <div id="myform">
                 <fieldset>
                     <div class="formGrid">
                         <div class="inputDivs emailDiv">
                             <label>Email*</label>
-                            <input type="text" id="email" name="email" placeholder="alex.pedersen@gmail.com">
+                            <input type="text" id="email" name="email" placeholder="alex.pedersen@gmail.com" required>
                             <span class="statusMessage email"></span>
                         </div>
                         <div class="inputDivs passwordDiv">
                             <label>Adgangskode*</label>
-                            <input type="password" id="password"  name="password" placeholder="********">
+                            <input type="password" id="password"  name="password" placeholder="********" required>
                             <span class="statusMessage password"></span>
                         </div>
                         <div class="inputDivs usernameDiv">
                             <label>Brugernavn*</label>
-                            <input type="username" id="username" name="username" placeholder="Lupe.-">
+                            <input type="username" id="username" name="username" placeholder="Lupe.-" required>
                             <span class="statusMessage username"></span>
                         </div>
                     </div>
@@ -37,12 +37,12 @@
                     <div class="formGrid">
                         <div class="inputDivs">
                             <label>Fornavn*</label>
-                            <input type="text" id="firstname" name="firstname" placeholder="Bobby">
+                            <input type="text" id="firstname" name="firstname" placeholder="Bobby" required>
                             <span class="statusMessage firstname"></span>
                         </div>
                         <div class="inputDivs">
                             <label>Efternavn*</label>
-                            <input type="text" id="lastname" name="lastname" placeholder="Jensen">
+                            <input type="text" id="lastname" name="lastname" placeholder="Jensen" required>
                             <span class="statusMessage lastname"></span>
                         </div>
                     </div>
@@ -52,22 +52,22 @@
                     <div class="formGrid">
                         <div class="inputDivs">
                             <label>Adresse*</label>
-                            <input type="text" id="adresse" name="adresse" placeholder="Bakkegårds allé 10">
+                            <input type="text" id="adresse" name="adresse" placeholder="Bakkegårds allé 10" required>
                             <span class="statusMessage adresse"></span>
                         </div>
                         <div class="inputDivs">
                             <label>Post nummer*</label>
-                            <input type="text" id="zip" name="zip" placeholder="1804">
+                            <input type="number" id="zip" name="zip" placeholder="1804" required>
                             <span class="statusMessage zip"></span>
                         </div>
                         <div class="inputDivs">
                             <label>By*</label>
-                            <input type="text" id="city" name="city" placeholder="København">
+                            <input type="text" id="city" name="city" placeholder="København" required>
                             <span class="statusMessage city"></span>
                         </div>
                         <div class="inputDivs">
                             <label>Land*</label>
-                            <input type="text" id="contry" name="contry" placeholder="Danmark">
+                            <input type="text" id="contry" name="contry" placeholder="Danmark" required>
                             <span class="statusMessage contry"></span>
                         </div>
                     </div>
@@ -76,6 +76,6 @@
             </div>
         </form>
 </div> <!-- end wrapper -->
-<script src="java.js"></script>
+<script src="app.js" type="module"></script>
 </body>
 </html>
